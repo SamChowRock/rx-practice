@@ -7,6 +7,7 @@ import GithubSlugger from 'github-slugger';
 import { load } from 'cheerio/slim';
 import { createHighlighter } from 'shiki';
 
+const siteTitle = 'RxJS 实战教程';
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '../..');
 const out = path.join(here, 'dist');
@@ -69,7 +70,7 @@ function readerContent($) {
 async function writePage(dest, title, content) {
   const base = path.relative(path.dirname(dest), '.') || '.';
   const nav = `<nav aria-label="阅读导航"><div class="bar">
-    <a class="brand" href="${base}/index.html">RxJS 实战</a>
+    <a class="brand" href="${base}/index.html">${escape(siteTitle)}</a>
     <a href="${base}/index.html#chapters">${icon('contents')}全书目录</a>
     <a href="${base}/game/index.html">${icon('settings')}游戏实战</a>
     <a href="https://github.com/SamChowRock/rx-practice">${githubMark}GitHub 仓库</a>
@@ -157,8 +158,8 @@ const outline = groups.map(([title, count]) => {
 }).join('');
 if (cursor !== chapters.length) throw new Error('请为新增章节指定目录分组');
 const references = [...titles.keys()].filter(file => !readingOrder.includes(file));
-await writePage('index.html', titles.get('README.md'), `<main class="contents">
-  <header class="overview"><div class="overview-copy"><h1>${escape(titles.get('README.md'))}</h1>
+await writePage('index.html', siteTitle, `<main class="contents">
+  <header class="overview"><div class="overview-copy"><h1>${escape(siteTitle)}</h1>
   <p>${escape(intro('p').first().text())}</p><a class="start" href="book/01.html">从第 1 章开始 →</a></div>
   <div class="overview-index"><strong>本页索引</strong><a href="#chapters">课程正文<span>↘</span></a>
   <a href="#game">接星星游戏实战<span>↘</span></a><a href="#references">索引与配套资料<span>↘</span></a></div></header>
