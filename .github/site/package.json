@@ -1,0 +1,12 @@
+{
+  "name": "rx-practice-pages",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs" },
+  "dependencies": {
+    "cheerio": "1.1.2",
+    "github-slugger": "2.0.0",
+    "markdown-it": "14.1.1",
+    "shiki": "4.6.0"
+  }
+}
