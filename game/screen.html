@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>接星星 · RxJS 实战</title>
+<style>
+*{box-sizing:border-box}
+:root{color-scheme:dark;font-family:Inter,"PingFang SC","Microsoft YaHei",sans-serif;color:#f2f3fa;background:#0c101e}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 65% 28%,#20233f,transparent 62%)}
+main{max-width:820px;margin:auto;padding:clamp(16px,4vw,40px)}
+header,.stats,.controls,.stage,.actions{display:flex;align-items:center;justify-content:space-between;gap:12px}
+header{border-bottom:1px solid #34384e;padding-bottom:18px;margin-bottom:18px}
+h1{font-size:clamp(24px,4vw,38px);letter-spacing:.04em;margin:0}
+label,p,.stats,footer{color:#c1c6da}select,button{font:inherit;color:inherit;background:#20263b;border:1px solid #48516b;border-radius:8px;padding:9px 12px}
+button{cursor:pointer;touch-action:manipulation}button:disabled{opacity:.45;cursor:default}
+button:focus-visible,select:focus-visible,#field:focus-visible{outline:2px solid #ffda80;outline-offset:3px}
+.primary{background:#ffdb86;color:#211d16;font-weight:700;border-color:transparent}
+.stats{margin-bottom:12px;justify-content:flex-start;gap:26px;font-size:14px}
+.stats b{font:600 20px/1.2 ui-monospace,monospace;color:#ffdb86}
+#phase{margin-left:auto;font-size:14px;color:#abd9e7}
+#field{position:relative;height:clamp(270px,52vh,460px);overflow:hidden;border:1px solid #48536b;border-radius:14px;background-color:#141b32;background-image:linear-gradient(90deg,transparent calc(100% - 1px),#ffffff15 0),radial-gradient(circle at 24% 17%,#ffffff55 .8px,transparent 1px),radial-gradient(circle at 70% 52%,#ffffff55 .8px,transparent 1.3px),linear-gradient(#14172e,#273553 74%,#35395b);background-size:20% 100%,113px 93px,161px 139px,cover}
+#field:before{content:"";position:absolute;left:0;right:0;bottom:8%;border-bottom:1px dashed #9cb5c057}
+.star,.ship{position:absolute;transform:translate(-50%,-50%);pointer-events:none}
+.star{font:clamp(22px,4vw,32px)/1 sans-serif;color:#ffdb86;text-shadow:0 0 14px #ffcf6559}
+#sled{position:absolute;top:92%;width:20%;pointer-events:none;transition:transform 90ms cubic-bezier(.22,.65,.35,1)}
+@media(prefers-reduced-motion:reduce){#sled{transition:none}}
+.ship{left:50%;width:min(65%,65px);height:18px;background:#91ead9;clip-path:polygon(0 0,22% 32%,78% 32%,100% 0,88% 82%,66% 100%,34% 100%,12% 82%)}
+#cover{position:absolute;inset:0;display:grid;place-content:center;text-align:center;background:#0e1328a8;backdrop-filter:blur(2px)}
+#cover strong{font-size:clamp(24px,4vw,34px)}#cover p{margin:10px 12px}
+[hidden]{display:none!important}.controls{margin:14px 0}.actions{gap:8px}
+.move{user-select:none;touch-action:none;min-width:54px;font-size:20px}
+footer{border-top:1px solid #34384e;margin-top:20px;padding-top:14px;font-size:14px;line-height:1.7}
+@media(max-width:480px){header{align-items:flex-start}.stage{flex-direction:column;align-items:flex-end;gap:3px;font-size:13px}.stats{gap:14px}.controls{flex-wrap:wrap}}
+</style>
+<main>
+<header><h1>接星星</h1><div class="stage"><label for="stage">实战关卡</label><select id="stage">
+<option value="1">1 · 移动接收器</option><option value="2">2 · 第一颗星</option><option value="3">3 · 完整一局</option><option value="4" selected>4 · 暂停与重开</option><option value="5">5 · 固定轨道验收</option></select></div></header>
+<div class="stats"><span>得分 <b id="score">0</b></span><span>漏接 <b id="misses">0</b></span><span>节拍 <b id="tick">0</b></span><span id="phase" role="status">就绪</span></div>
+<div id="field" tabindex="0" aria-label="五轨接星星游戏区"><div id="stars"></div><div id="sled"><div class="ship"></div></div><div id="cover"><strong id="headline"></strong><p id="hint"></p></div></div>
+<div class="controls"><div class="actions"><button class="move" id="left" aria-label="按住左移">←</button><button class="move" id="right" aria-label="按住右移">→</button></div><div class="actions"><button id="pause" disabled>暂停</button><button class="primary" id="start">开始游戏</button></div></div>
+<footer id="instructions"></footer>
+</main>
+<script>/* GAME_SCRIPT */</script>
+</html>
