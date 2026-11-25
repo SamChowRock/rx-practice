@@ -24,6 +24,7 @@ const planned = new Map();
 const chapters = new Map();
 for (const chunk of outline.split(/^## /m).slice(1,-1)) {
   const id = chunk.startsWith('结业') ? '17' : chunk.slice(0,2);
+  if (id === '00') continue; // 导读没有配套实验，也不承担 API 主讲。
   const chapter = read('book/' + id + '.md');
   const lab = read('labs/' + id + '.ts');
   const practice = new Map();

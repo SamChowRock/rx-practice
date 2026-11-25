@@ -147,7 +147,7 @@ function section(title, entries) {
 }
 const intro = load(md.render(await readFile(path.join(root,'README.md'),'utf8')), {}, false);
 const groups = [
-  ['观察一次执行',3], ['时间与在途工作',3], ['多个参与者',3], ['真实线路与测试',4],
+  ['走进实时控制台',1], ['观察一次执行',3], ['时间与在途工作',3], ['多个参与者',3], ['真实线路与测试',4],
   ['事故回放与独立排错',3], ['结业与独立练习',2],
 ];
 let cursor = 0;
@@ -160,7 +160,7 @@ if (cursor !== chapters.length) throw new Error('请为新增章节指定目录�
 const references = [...titles.keys()].filter(file => !readingOrder.includes(file));
 await writePage('index.html', siteTitle, `<main class="contents">
   <header class="overview"><div class="overview-copy"><h1>${escape(siteTitle)}</h1>
-  <p>${escape(intro('p').first().text())}</p><a class="start" href="book/01.html">从第 1 章开始 →</a></div>
+  <p>${escape(intro('p').first().text())}</p><a class="start" href="book/00.html">从第 0 章开始 →</a></div>
   <div class="overview-index"><strong>本页索引</strong><a href="#chapters">课程正文<span>↘</span></a>
   <a href="#game">接星星游戏实战<span>↘</span></a><a href="#references">索引与配套资料<span>↘</span></a></div></header>
   <details class="intro"><summary>第一次跟做？查看运行方式</summary><p>使用 Node.js 24，在项目根目录运行
