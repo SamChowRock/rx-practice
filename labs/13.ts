@@ -185,3 +185,32 @@ for (const mode of ['legacy', 'preserve', 'reset'] as const) {
   });
 }
 console.log('已核对归档交接、同步配对的读取批号、轮询结束帧与回放过期边界。');
+
+{
+  const seconds = (ms: number) => ms / 1000;
+  const label = (s: number) => s + ' 秒';
+  const durations = rx.of(500, 1200);
+  const separate = await collect(durations.pipe(rx.map(seconds), rx.map(label)));
+  const fused = await collect(durations.pipe(rx.map(ms => label(seconds(ms)))));
+  assert.deepEqual(separate, ['0.5 秒', '1.2 秒']);
+  assert.deepEqual(fused, separate);
+
+  const frames = rx.of('ping', 'row:42');
+  const isRow = (frame: string) => frame.startsWith('row:');
+  const visibleIndices = frames.pipe(rx.filter(isRow), rx.map((_, index) => index));
+  const wireIndices = frames.pipe(
+    rx.map((frame, index) => ({ frame, index })),
+    rx.filter(item => isRow(item.frame)),
+    rx.map(item => item.index)
+  );
+  assert.deepEqual(await collect(visibleIndices), [0]);
+  assert.deepEqual(await collect(wireIndices), [1]);
+
+  const decode = (frame: string): unknown => JSON.parse(frame.slice(4));
+  assert.deepEqual(await collect(frames.pipe(rx.filter(isRow), rx.map(decode))), [42]);
+  await assert.rejects(collect(frames.pipe(
+    rx.map(frame => ({ frame, value: decode(frame) })),
+    rx.filter(item => isRow(item.frame))
+  )), SyntaxError);
+  console.log('管道重写：标签相同；行号 0、帧号 1；提前解析在心跳处终止。');
+}

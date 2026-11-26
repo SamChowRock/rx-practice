@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { setTimeout as sleep } from 'node:timers/promises'
 import {
-  Observable, Subscriber, Subscription, UnsubscriptionError, finalize, lastValueFrom, using,
+  Observable, Subscriber, Subscription, UnsubscriptionError, finalize, lastValueFrom, of, using,
   type CompletionObserver, type ErrorObserver, type NextObserver, type Observer,
   type PartialObserver, type SubscriptionLike, type TeardownLogic,
   type Unsubscribable,
@@ -190,3 +190,19 @@ function closeMain(captureTicket: boolean) {
 assert.deepEqual(closeMain(false), [[1], [], 1])
 assert.deepEqual(closeMain(true), [[2], ['side'], 0])
 console.log('首行预览解码次数 3、3、1；同步完成后释放；关闭主窗口仅保留票 2')
+
+{
+  const trace: string[] = []
+  of('A', 'B').subscribe({
+    async next(line) {
+      trace.push('开始 ' + line)
+      await Promise.resolve()
+      trace.push('写完 ' + line)
+    },
+    complete() { trace.push('来源结束') }
+  })
+  assert.deepEqual(trace, ['开始 A', '开始 B', '来源结束'])
+  await Promise.resolve()
+  assert.deepEqual(trace, ['开始 A', '开始 B', '来源结束', '写完 A', '写完 B'])
+  console.log('异步接收回调', trace)
+}

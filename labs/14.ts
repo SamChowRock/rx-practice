@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {
   BehaviorSubject, Observable, Subject, Subscription, catchError, combineLatest,
-  defer, distinctUntilChanged, filter, from, map, of, retry, scan, tap, timeout, withLatestFrom
+  defer, distinctUntilChanged, filter, from, map, of, retry, scan, shareReplay, tap, timeout, withLatestFrom
 } from 'rxjs';
 import { TestScheduler } from 'rxjs/testing';
 
@@ -159,3 +159,25 @@ for (let pass = 0; pass < 2; pass++) {
   assert.deepEqual(states, [[41],[41,42]]);
 }
 console.log('独立详情第 3 帧收到零，跟播详情只见后两行；续包超时在帧 4。两遍重放都只接纳 41、42。');
+
+{
+  const liveErrors = new Subject<string>();
+  const atSource: string[] = [], atDisplay: string[] = [];
+  const mainPanel: string[] = [], detailPanel: string[] = [];
+  const view = liveErrors.pipe(
+    tap(id => atSource.push(id)),
+    shareReplay({ bufferSize: 1, refCount: true }),
+    tap(id => atDisplay.push(id))
+  );
+  const main = view.subscribe(id => mainPanel.push(id));
+  liveErrors.next('E1');
+  const detail = view.subscribe(id => detailPanel.push(id));
+  liveErrors.next('E2');
+  main.unsubscribe();
+  detail.unsubscribe();
+  assert.deepEqual(mainPanel, ['E1', 'E2']);
+  assert.deepEqual(detailPanel, mainPanel);
+  assert.deepEqual(atSource, ['E1', 'E2']);
+  assert.deepEqual(atDisplay, ['E1', 'E1', 'E2', 'E2']);
+  console.log('响铃记录：直播来源', atSource, '画面交付', atDisplay);
+}

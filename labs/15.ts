@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {
-  BehaviorSubject, combineLatest, concatMap, defer, finalize, from, fromEvent,
+  BehaviorSubject, Subject, combineLatest, concatMap, defer, finalize, from, fromEvent,
   map, mergeMap, takeUntil, tap, timer, toArray, withLatestFrom, catchError, of, take
 } from 'rxjs';
 import { TestScheduler } from 'rxjs/testing';
@@ -115,3 +115,31 @@ new TestScheduler((a, b) => assert.deepEqual(a, b)).run(({ hot, expectObservable
   expectObservable(parts.pipe(toArray(), takeUntil(cancel))).toBe('---|');
 });
 console.log('旧字随点击保存，坏附件只结束本份任务；空表在帧 2 提交，取消时不会交出半份数组。');
+
+{
+  const jobs = new Subject<string>(), button = new Subject<void>();
+  const confirmed = new Subject<void>();
+  function writer() {
+    const started: string[] = [], written: string[] = [];
+    const write = (job: string) => defer(() => {
+      started.push(job);
+      return confirmed.pipe(take(1), tap(() => written.push(job)));
+    });
+    return { started, written, write };
+  }
+  const drain = writer(), skip = writer(), close = writer();
+  jobs.pipe(takeUntil(button), concatMap(drain.write)).subscribe();
+  jobs.pipe(concatMap(job => skip.write(job).pipe(takeUntil(button)))).subscribe();
+  jobs.pipe(concatMap(close.write), takeUntil(button)).subscribe();
+  jobs.next('A');
+  jobs.next('B');
+  button.next();
+  jobs.next('C');
+  jobs.complete();
+  confirmed.next();
+  confirmed.next();
+  assert.deepEqual([drain.started, drain.written], [['A', 'B'], ['A', 'B']]);
+  assert.deepEqual([skip.started, skip.written], [['A', 'B', 'C'], ['B', 'C']]);
+  assert.deepEqual([close.started, close.written], [['A'], []]);
+  console.log('取消后写完的文件：停止接单', drain.written, '跳过当前', skip.written, '关闭队列', close.written);
+}
