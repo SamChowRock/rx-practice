@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570" height="337" viewBox="0 0 570 337" role="img" aria-labelledby="title desc">
+<title id="title">两个面板共同拥有一条连接</title><desc id="desc">第一个面板开启连接，最后一个面板释放连接。用手遮住列表退出后的区间，只看计数器：它还在订阅，因此底层连接也应延续。</desc>
+<g font-family="system-ui, PingFang SC, Microsoft YaHei, sans-serif">
+<rect width="570" height="337" rx="12" fill="#f7fafb"/>
+<text x="19" y="33" fill="#203647" font-size="22" font-weight="680" text-anchor="start">两个面板共同拥有一条连接</text>
+<text x="19" y="72" fill="#425b68" font-size="15" font-weight="450" text-anchor="start">先后</text>
+<text x="137.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">开列表</text>
+<path d="M137.0 83 L137.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="213.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">行①</text>
+<path d="M213.0 83 L213.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="289.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">开计数</text>
+<path d="M289.0 83 L289.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="365.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">行②</text>
+<path d="M365.0 83 L365.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="441.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">关列表</text>
+<path d="M441.0 83 L441.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="517.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">关计数</text>
+<path d="M517.0 83 L517.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="19" y="110" fill="#203647" font-size="16" font-weight="620" text-anchor="start">列表订阅</text>
+<path d="M123 105 L550 105" stroke="#b9cad1"/>
+<path d="M545 102 L550 105" stroke="#b9cad1"/>
+<path d="M545 108 L550 105" stroke="#b9cad1"/>
+<rect x="137.0" y="92" width="304.0" height="26" fill="#f2eafa"/>
+<path d="M137.0 118 L441.0 118" stroke="#62438a" stroke-width="2"/>
+<path d="M137.0 92 L137.0 118" stroke="#62438a" stroke-width="2"/>
+<path d="M441.0 92 L441.0 118" stroke="#62438a" stroke-width="2"/>
+<text x="289.0" y="110" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">列表在场</text>
+<text x="19" y="163" fill="#203647" font-size="16" font-weight="620" text-anchor="start">计数订阅</text>
+<path d="M123 158 L550 158" stroke="#b9cad1"/>
+<path d="M545 155 L550 158" stroke="#b9cad1"/>
+<path d="M545 161 L550 158" stroke="#b9cad1"/>
+<rect x="289.0" y="145" width="228.0" height="26" fill="#f2eafa"/>
+<path d="M289.0 171 L517.0 171" stroke="#62438a" stroke-width="2"/>
+<path d="M289.0 145 L289.0 171" stroke="#62438a" stroke-width="2"/>
+<path d="M517.0 145 L517.0 171" stroke="#62438a" stroke-width="2"/>
+<text x="403.0" y="163" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">计数在场</text>
+<text x="19" y="216" fill="#203647" font-size="16" font-weight="620" text-anchor="start">底层连接</text>
+<path d="M123 211 L550 211" stroke="#b9cad1"/>
+<path d="M545 208 L550 211" stroke="#b9cad1"/>
+<path d="M545 214 L550 211" stroke="#b9cad1"/>
+<rect x="137.0" y="198" width="380.0" height="26" fill="#d7f4e8"/>
+<path d="M137.0 224 L517.0 224" stroke="#086450" stroke-width="2"/>
+<path d="M137.0 198 L137.0 224" stroke="#086450" stroke-width="2"/>
+<path d="M517.0 198 L517.0 224" stroke="#086450" stroke-width="2"/>
+<text x="327.0" y="216" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">同一条连接</text>
+<text x="19" y="269" fill="#203647" font-size="16" font-weight="620" text-anchor="start">来源</text>
+<path d="M123 264 L550 264" stroke="#b9cad1"/>
+<path d="M545 261 L550 264" stroke="#b9cad1"/>
+<path d="M545 267 L550 264" stroke="#b9cad1"/>
+<rect x="198.0" y="249" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="213.0" y="269" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">①</text>
+<rect x="350.0" y="249" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="365.0" y="269" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">②</text>
+<text x="19" y="325" fill="#4e6771" font-size="13" font-weight="450" text-anchor="start">从左往右读 · 同列对齐 · 横条表示持续区间</text>
+</g></svg>

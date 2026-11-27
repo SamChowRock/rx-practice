@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570" height="337" viewBox="0 0 570 337" role="img" aria-labelledby="title desc">
+<title id="title">一声取消，三套文件清单</title><desc id="desc">下面三行分别跑同一组输入，字母表示实际写完的文件。按按钮时 A 在写、B 在队里。若只跳过当前，第一声确认属于已接手的 B。</desc>
+<g font-family="system-ui, PingFang SC, Microsoft YaHei, sans-serif">
+<rect width="570" height="337" rx="12" fill="#f7fafb"/>
+<text x="19" y="33" fill="#203647" font-size="22" font-weight="680" text-anchor="start">一声取消，三套文件清单</text>
+<text x="19" y="72" fill="#425b68" font-size="15" font-weight="450" text-anchor="start">先后</text>
+<text x="137.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">接A</text>
+<path d="M137.0 83 L137.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="213.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">接B</text>
+<path d="M213.0 83 L213.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="289.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">按钮</text>
+<path d="M289.0 83 L289.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="365.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">接C</text>
+<path d="M365.0 83 L365.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="441.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">确认①</text>
+<path d="M441.0 83 L441.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="517.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">确认②</text>
+<path d="M517.0 83 L517.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="19" y="110" fill="#203647" font-size="16" font-weight="620" text-anchor="start">收到的任务</text>
+<path d="M123 105 L550 105" stroke="#b9cad1"/>
+<path d="M545 102 L550 105" stroke="#b9cad1"/>
+<path d="M545 108 L550 105" stroke="#b9cad1"/>
+<rect x="122.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="137.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">A</text>
+<rect x="198.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="213.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">B</text>
+<rect x="350.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="365.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">C</text>
+<text x="19" y="163" fill="#203647" font-size="16" font-weight="620" text-anchor="start">停止接单</text>
+<path d="M123 158 L550 158" stroke="#b9cad1"/>
+<path d="M545 155 L550 158" stroke="#b9cad1"/>
+<path d="M545 161 L550 158" stroke="#b9cad1"/>
+<rect x="426.0" y="143" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="441.0" y="163" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">A</text>
+<rect x="502.0" y="143" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="517.0" y="163" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">B</text>
+<text x="19" y="216" fill="#203647" font-size="16" font-weight="620" text-anchor="start">跳过当前</text>
+<path d="M123 211 L550 211" stroke="#b9cad1"/>
+<path d="M545 208 L550 211" stroke="#b9cad1"/>
+<path d="M545 214 L550 211" stroke="#b9cad1"/>
+<rect x="426.0" y="196" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="441.0" y="216" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">B</text>
+<rect x="502.0" y="196" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="517.0" y="216" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">C</text>
+<text x="19" y="269" fill="#203647" font-size="16" font-weight="620" text-anchor="start">关闭队列</text>
+<path d="M123 264 L550 264" stroke="#b9cad1"/>
+<path d="M545 261 L550 264" stroke="#b9cad1"/>
+<path d="M545 267 L550 264" stroke="#b9cad1"/>
+<rect x="266.5" y="249" width="45.0" height="30" rx="15" fill="#fff0d9" stroke="#91491b" stroke-width="1.4"/>
+<text x="289.0" y="269" fill="#91491b" font-size="15" font-weight="600" text-anchor="middle">结束</text>
+<text x="19" y="325" fill="#4e6771" font-size="13" font-weight="450" text-anchor="start">从左往右读 · 同列对齐</text>
+</g></svg>

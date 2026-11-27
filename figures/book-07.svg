@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570" height="337" viewBox="0 0 570 337" role="img" aria-labelledby="title desc">
+<title id="title">筛选会重画，点击才导出</title><desc id="desc">假设日志已到且期间没有新增。沿着选 B 的竖线看，预览已经改变，文件这一行仍空着；下一次点击才把 B 写进文件。</desc>
+<g font-family="system-ui, PingFang SC, Microsoft YaHei, sans-serif">
+<rect width="570" height="337" rx="12" fill="#f7fafb"/>
+<text x="19" y="33" fill="#203647" font-size="22" font-weight="680" text-anchor="start">筛选会重画，点击才导出</text>
+<text x="19" y="72" fill="#425b68" font-size="15" font-weight="450" text-anchor="start">先后</text>
+<text x="137.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">选A</text>
+<path d="M137.0 83 L137.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="263.7" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">点击</text>
+<path d="M263.7 83 L263.7 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="390.3" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">选B</text>
+<path d="M390.3 83 L390.3 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="517.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">再点击</text>
+<path d="M517.0 83 L517.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="19" y="110" fill="#203647" font-size="16" font-weight="620" text-anchor="start">当前条件</text>
+<path d="M123 105 L550 105" stroke="#b9cad1"/>
+<path d="M545 102 L550 105" stroke="#b9cad1"/>
+<path d="M545 108 L550 105" stroke="#b9cad1"/>
+<rect x="122.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="137.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">A</text>
+<rect x="375.3" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="390.3" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">B</text>
+<text x="19" y="163" fill="#203647" font-size="16" font-weight="620" text-anchor="start">导出按钮</text>
+<path d="M123 158 L550 158" stroke="#b9cad1"/>
+<path d="M545 155 L550 158" stroke="#b9cad1"/>
+<path d="M545 161 L550 158" stroke="#b9cad1"/>
+<rect x="248.7" y="143" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="263.7" y="163" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">按</text>
+<rect x="502.0" y="143" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="517.0" y="163" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">按</text>
+<text x="19" y="216" fill="#203647" font-size="16" font-weight="620" text-anchor="start">预览更新</text>
+<path d="M123 211 L550 211" stroke="#b9cad1"/>
+<path d="M545 208 L550 211" stroke="#b9cad1"/>
+<path d="M545 214 L550 211" stroke="#b9cad1"/>
+<rect x="122.0" y="196" width="30.0" height="30" rx="15" fill="#f2eafa" stroke="#62438a" stroke-width="1.4"/>
+<text x="137.0" y="216" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">A</text>
+<rect x="375.3" y="196" width="30.0" height="30" rx="15" fill="#f2eafa" stroke="#62438a" stroke-width="1.4"/>
+<text x="390.3" y="216" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">B</text>
+<text x="19" y="269" fill="#203647" font-size="16" font-weight="620" text-anchor="start">文件内容</text>
+<path d="M123 264 L550 264" stroke="#b9cad1"/>
+<path d="M545 261 L550 264" stroke="#b9cad1"/>
+<path d="M545 267 L550 264" stroke="#b9cad1"/>
+<rect x="248.7" y="249" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="263.7" y="269" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">A</text>
+<rect x="502.0" y="249" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="517.0" y="269" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">B</text>
+<text x="19" y="325" fill="#4e6771" font-size="13" font-weight="450" text-anchor="start">从左往右读 · 同列对齐</text>
+</g></svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570" height="284" viewBox="0 0 570 284" role="img" aria-labelledby="title desc">
+<title id="title">累计读数和最终报告</title><desc id="desc">徽标在订阅时先显示初值，此后逐行更新。把最右边的完成拿走，最后一格报告就空着，徽标已经显示的 2 仍是有效读数。</desc>
+<g font-family="system-ui, PingFang SC, Microsoft YaHei, sans-serif">
+<rect width="570" height="284" rx="12" fill="#f7fafb"/>
+<text x="19" y="33" fill="#203647" font-size="22" font-weight="680" text-anchor="start">累计读数和最终报告</text>
+<text x="19" y="72" fill="#425b68" font-size="15" font-weight="450" text-anchor="start">先后</text>
+<text x="137.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">订阅</text>
+<path d="M137.0 83 L137.0 246" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="232.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">普通行</text>
+<path d="M232.0 83 L232.0 246" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="327.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">错误①</text>
+<path d="M327.0 83 L327.0 246" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="422.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">错误②</text>
+<path d="M422.0 83 L422.0 246" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="517.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">完成</text>
+<path d="M517.0 83 L517.0 246" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="19" y="110" fill="#203647" font-size="16" font-weight="620" text-anchor="start">每行贡献</text>
+<path d="M123 105 L550 105" stroke="#b9cad1"/>
+<path d="M545 102 L550 105" stroke="#b9cad1"/>
+<path d="M545 108 L550 105" stroke="#b9cad1"/>
+<rect x="217.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="232.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">0</text>
+<rect x="312.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="327.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">1</text>
+<rect x="407.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="422.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">1</text>
+<text x="19" y="163" fill="#203647" font-size="16" font-weight="620" text-anchor="start">实时徽标</text>
+<path d="M123 158 L550 158" stroke="#b9cad1"/>
+<path d="M545 155 L550 158" stroke="#b9cad1"/>
+<path d="M545 161 L550 158" stroke="#b9cad1"/>
+<rect x="122.0" y="143" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="137.0" y="163" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">0</text>
+<rect x="217.0" y="143" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="232.0" y="163" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">0</text>
+<rect x="312.0" y="143" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="327.0" y="163" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">1</text>
+<rect x="407.0" y="143" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="422.0" y="163" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">2</text>
+<text x="19" y="216" fill="#203647" font-size="16" font-weight="620" text-anchor="start">最终报告</text>
+<path d="M123 211 L550 211" stroke="#b9cad1"/>
+<path d="M545 208 L550 211" stroke="#b9cad1"/>
+<path d="M545 214 L550 211" stroke="#b9cad1"/>
+<rect x="502.0" y="196" width="30.0" height="30" rx="15" fill="#f2eafa" stroke="#62438a" stroke-width="1.4"/>
+<text x="517.0" y="216" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">2</text>
+<text x="19" y="272" fill="#4e6771" font-size="13" font-weight="450" text-anchor="start">从左往右读 · 同列对齐</text>
+</g></svg>

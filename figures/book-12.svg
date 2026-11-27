@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="666" height="337" viewBox="0 0 666 337" role="img" aria-labelledby="title desc">
+<title id="title">把冷源的局部时间放回全局帧</title><desc id="desc">A、B 各在自己订阅后的第 2 帧发出首值。B 从全局帧 4 才开始，所以 z 落在帧 6；同一根帧 7 的竖线同时穿过退订 B 和面板完成。</desc>
+<g font-family="system-ui, PingFang SC, Microsoft YaHei, sans-serif">
+<rect width="666" height="337" rx="12" fill="#f7fafb"/>
+<text x="19" y="33" fill="#203647" font-size="22" font-weight="680" text-anchor="start">把冷源的局部时间放回全局帧</text>
+<text x="19" y="72" fill="#425b68" font-size="15" font-weight="450" text-anchor="start">全局帧</text>
+<text x="137" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">0</text>
+<path d="M137 83 L137 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="205" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">1</text>
+<path d="M205 83 L205 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="273" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">2</text>
+<path d="M273 83 L273 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="341" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">3</text>
+<path d="M341 83 L341 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="409" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">4</text>
+<path d="M409 83 L409 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="477" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">5</text>
+<path d="M477 83 L477 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="545" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">6</text>
+<path d="M545 83 L545 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="613" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">7</text>
+<path d="M613 83 L613 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="19" y="110" fill="#203647" font-size="16" font-weight="620" text-anchor="start">控制输入</text>
+<path d="M123 105 L646 105" stroke="#b9cad1"/>
+<path d="M641 102 L646 105" stroke="#b9cad1"/>
+<path d="M641 108 L646 105" stroke="#b9cad1"/>
+<rect x="122.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="137" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">A</text>
+<rect x="394.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="409" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">B</text>
+<rect x="590.5" y="90" width="45.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="613" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">关闭</text>
+<text x="19" y="163" fill="#203647" font-size="16" font-weight="620" text-anchor="start">A 的订阅</text>
+<path d="M123 158 L646 158" stroke="#b9cad1"/>
+<path d="M641 155 L646 158" stroke="#b9cad1"/>
+<path d="M641 161 L646 158" stroke="#b9cad1"/>
+<rect x="137" y="145" width="272" height="26" fill="#f2eafa"/>
+<path d="M137 171 L409 171" stroke="#62438a" stroke-width="2"/>
+<path d="M137 145 L137 171" stroke="#62438a" stroke-width="2"/>
+<path d="M409 145 L409 171" stroke="#62438a" stroke-width="2"/>
+<text x="273.0" y="163" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">订阅 A</text>
+<text x="19" y="216" fill="#203647" font-size="16" font-weight="620" text-anchor="start">B 的订阅</text>
+<path d="M123 211 L646 211" stroke="#b9cad1"/>
+<path d="M641 208 L646 211" stroke="#b9cad1"/>
+<path d="M641 214 L646 211" stroke="#b9cad1"/>
+<rect x="409" y="198" width="204" height="26" fill="#f2eafa"/>
+<path d="M409 224 L613 224" stroke="#62438a" stroke-width="2"/>
+<path d="M409 198 L409 224" stroke="#62438a" stroke-width="2"/>
+<path d="M613 198 L613 224" stroke="#62438a" stroke-width="2"/>
+<text x="511.0" y="216" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">订阅 B</text>
+<text x="19" y="269" fill="#203647" font-size="16" font-weight="620" text-anchor="start">面板通知</text>
+<path d="M123 264 L646 264" stroke="#b9cad1"/>
+<path d="M641 261 L646 264" stroke="#b9cad1"/>
+<path d="M641 267 L646 264" stroke="#b9cad1"/>
+<rect x="258.0" y="249" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="273" y="269" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">x</text>
+<rect x="530.0" y="249" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="545" y="269" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">z</text>
+<rect x="590.5" y="249" width="45.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="613" y="269" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">完成</text>
+<text x="19" y="325" fill="#4e6771" font-size="13" font-weight="450" text-anchor="start">从左往右读 · 同列对齐 · 横条表示持续区间</text>
+</g></svg>

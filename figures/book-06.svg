@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570" height="443" viewBox="0 0 570 443" role="img" aria-labelledby="title desc">
+<title id="title">两个请求都成功，旧结果却盖住了 B</title><desc id="desc">时刻按数字读。B 在第 5 毫秒取代 A；若保留旧订阅，第 40 毫秒屏幕会退回 A。切换策略在第 5 毫秒撤掉 A 的计时读取，只交付 B。</desc>
+<g font-family="system-ui, PingFang SC, Microsoft YaHei, sans-serif">
+<rect width="570" height="443" rx="12" fill="#f7fafb"/>
+<text x="19" y="33" fill="#203647" font-size="22" font-weight="680" text-anchor="start">两个请求都成功，旧结果却盖住了 B</text>
+<text x="19" y="72" fill="#425b68" font-size="15" font-weight="450" text-anchor="start">毫秒</text>
+<text x="137.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">0</text>
+<path d="M137.0 83 L137.0 405" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="263.7" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">5</text>
+<path d="M263.7 83 L263.7 405" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="390.3" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">15</text>
+<path d="M390.3 83 L390.3 405" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="517.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">40</text>
+<path d="M517.0 83 L517.0 405" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="19" y="110" fill="#203647" font-size="16" font-weight="620" text-anchor="start">选中任务</text>
+<path d="M123 105 L550 105" stroke="#b9cad1"/>
+<path d="M545 102 L550 105" stroke="#b9cad1"/>
+<path d="M545 108 L550 105" stroke="#b9cad1"/>
+<rect x="122.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="137.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">A</text>
+<rect x="248.7" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="263.7" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">B</text>
+<text x="19" y="163" fill="#203647" font-size="16" font-weight="620" text-anchor="start">不切换：A</text>
+<path d="M123 158 L550 158" stroke="#b9cad1"/>
+<path d="M545 155 L550 158" stroke="#b9cad1"/>
+<path d="M545 161 L550 158" stroke="#b9cad1"/>
+<rect x="137.0" y="145" width="380.0" height="26" fill="#fff0d9"/>
+<path d="M137.0 171 L517.0 171" stroke="#91491b" stroke-width="2"/>
+<path d="M137.0 145 L137.0 171" stroke="#91491b" stroke-width="2"/>
+<path d="M517.0 145 L517.0 171" stroke="#91491b" stroke-width="2"/>
+<text x="327.0" y="163" fill="#91491b" font-size="15" font-weight="600" text-anchor="middle">读取 A</text>
+<text x="19" y="216" fill="#203647" font-size="16" font-weight="620" text-anchor="start">不切换：B</text>
+<path d="M123 211 L550 211" stroke="#b9cad1"/>
+<path d="M545 208 L550 211" stroke="#b9cad1"/>
+<path d="M545 214 L550 211" stroke="#b9cad1"/>
+<rect x="263.7" y="198" width="126.60000000000002" height="26" fill="#f2eafa"/>
+<path d="M263.7 224 L390.3 224" stroke="#62438a" stroke-width="2"/>
+<path d="M263.7 198 L263.7 224" stroke="#62438a" stroke-width="2"/>
+<path d="M390.3 198 L390.3 224" stroke="#62438a" stroke-width="2"/>
+<text x="327.0" y="216" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">读取 B</text>
+<text x="19" y="269" fill="#203647" font-size="16" font-weight="620" text-anchor="start">并行显示</text>
+<path d="M123 264 L550 264" stroke="#b9cad1"/>
+<path d="M545 261 L550 264" stroke="#b9cad1"/>
+<path d="M545 267 L550 264" stroke="#b9cad1"/>
+<rect x="375.3" y="249" width="30.0" height="30" rx="15" fill="#fff0d9" stroke="#91491b" stroke-width="1.4"/>
+<text x="390.3" y="269" fill="#91491b" font-size="15" font-weight="600" text-anchor="middle">B</text>
+<rect x="502.0" y="249" width="30.0" height="30" rx="15" fill="#fff0d9" stroke="#91491b" stroke-width="1.4"/>
+<text x="517.0" y="269" fill="#91491b" font-size="15" font-weight="600" text-anchor="middle">A</text>
+<text x="19" y="322" fill="#203647" font-size="16" font-weight="620" text-anchor="start">切换：A</text>
+<path d="M123 317 L550 317" stroke="#b9cad1"/>
+<path d="M545 314 L550 317" stroke="#b9cad1"/>
+<path d="M545 320 L550 317" stroke="#b9cad1"/>
+<rect x="137.0" y="304" width="126.69999999999999" height="26" fill="#f2eafa"/>
+<path d="M137.0 330 L263.7 330" stroke="#62438a" stroke-width="2"/>
+<path d="M137.0 304 L137.0 330" stroke="#62438a" stroke-width="2"/>
+<path d="M263.7 304 L263.7 330" stroke="#62438a" stroke-width="2"/>
+<text x="200.35" y="322" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">读 A</text>
+<text x="19" y="375" fill="#203647" font-size="16" font-weight="620" text-anchor="start">切换显示</text>
+<path d="M123 370 L550 370" stroke="#b9cad1"/>
+<path d="M545 367 L550 370" stroke="#b9cad1"/>
+<path d="M545 373 L550 370" stroke="#b9cad1"/>
+<rect x="375.3" y="355" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="390.3" y="375" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">B</text>
+<text x="19" y="431" fill="#4e6771" font-size="13" font-weight="450" text-anchor="start">从左往右读 · 同列对齐 · 横条表示持续区间</text>
+</g></svg>

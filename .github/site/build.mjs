@@ -117,6 +117,12 @@ for (const file of files.filter(name => name.endsWith('.md'))) {
     }
     if (target) $(el).attr('href', path.relative(path.dirname(dest), target) + suffix);
   });
+  for (const image of $('img[src^="../figures/"]').toArray()) {
+    const src = $(image).attr('src');
+    const asset = path.join(path.dirname(file), decodeURIComponent(src));
+    if (!targets.has(asset)) await save(asset, await readFile(path.join(root, asset)));
+    $(image).parent('a').wrap('<span class="timeline-scroll"></span>');
+  }
   $('table').wrap('<div class="table-scroll"></div>');
   const index = readingOrder.indexOf(file);
   if (index !== -1) {

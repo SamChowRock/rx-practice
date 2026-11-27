@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="598" height="390" viewBox="0 0 598 390" role="img" aria-labelledby="title desc">
+<title id="title">同样三次输入，四种接纳规则</title><desc id="desc">a 耗时四帧，b、c 各耗一帧。本例帧 2 的新输入先于同帧回包处理，所以切换时 b 被撤下；两路并行时 b 的回包腾出位置给 c。</desc>
+<g font-family="system-ui, PingFang SC, Microsoft YaHei, sans-serif">
+<rect width="598" height="390" rx="12" fill="#f7fafb"/>
+<text x="19" y="33" fill="#203647" font-size="22" font-weight="680" text-anchor="start">同样三次输入，四种接纳规则</text>
+<text x="19" y="72" fill="#425b68" font-size="15" font-weight="450" text-anchor="start">虚拟帧</text>
+<text x="137" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">0</text>
+<path d="M137 83 L137 352" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="205" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">1</text>
+<path d="M205 83 L205 352" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="273" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">2</text>
+<path d="M273 83 L273 352" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="341" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">3</text>
+<path d="M341 83 L341 352" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="409" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">4</text>
+<path d="M409 83 L409 352" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="477" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">5</text>
+<path d="M477 83 L477 352" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="545" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">6</text>
+<path d="M545 83 L545 352" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="19" y="110" fill="#203647" font-size="16" font-weight="620" text-anchor="start">输入</text>
+<path d="M123 105 L578 105" stroke="#b9cad1"/>
+<path d="M573 102 L578 105" stroke="#b9cad1"/>
+<path d="M573 108 L578 105" stroke="#b9cad1"/>
+<rect x="122.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="137" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">a</text>
+<rect x="190.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="205" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">b</text>
+<rect x="258.0" y="90" width="30.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="273" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">c</text>
+<text x="19" y="163" fill="#203647" font-size="16" font-weight="620" text-anchor="start">切到最新</text>
+<path d="M123 158 L578 158" stroke="#b9cad1"/>
+<path d="M573 155 L578 158" stroke="#b9cad1"/>
+<path d="M573 161 L578 158" stroke="#b9cad1"/>
+<rect x="326.0" y="143" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="341" y="163" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">c</text>
+<text x="19" y="216" fill="#203647" font-size="16" font-weight="620" text-anchor="start">逐笔排队</text>
+<path d="M123 211 L578 211" stroke="#b9cad1"/>
+<path d="M573 208 L578 211" stroke="#b9cad1"/>
+<path d="M573 214 L578 211" stroke="#b9cad1"/>
+<rect x="394.0" y="196" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="409" y="216" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">a</text>
+<rect x="462.0" y="196" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="477" y="216" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">b</text>
+<rect x="530.0" y="196" width="30.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="545" y="216" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">c</text>
+<text x="19" y="269" fill="#203647" font-size="16" font-weight="620" text-anchor="start">两路并行</text>
+<path d="M123 264 L578 264" stroke="#b9cad1"/>
+<path d="M573 261 L578 264" stroke="#b9cad1"/>
+<path d="M573 267 L578 264" stroke="#b9cad1"/>
+<rect x="258.0" y="249" width="30.0" height="30" rx="15" fill="#f2eafa" stroke="#62438a" stroke-width="1.4"/>
+<text x="273" y="269" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">b</text>
+<rect x="326.0" y="249" width="30.0" height="30" rx="15" fill="#f2eafa" stroke="#62438a" stroke-width="1.4"/>
+<text x="341" y="269" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">c</text>
+<rect x="394.0" y="249" width="30.0" height="30" rx="15" fill="#f2eafa" stroke="#62438a" stroke-width="1.4"/>
+<text x="409" y="269" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">a</text>
+<text x="19" y="322" fill="#203647" font-size="16" font-weight="620" text-anchor="start">忙时忽略</text>
+<path d="M123 317 L578 317" stroke="#b9cad1"/>
+<path d="M573 314 L578 317" stroke="#b9cad1"/>
+<path d="M573 320 L578 317" stroke="#b9cad1"/>
+<rect x="394.0" y="302" width="30.0" height="30" rx="15" fill="#fff0d9" stroke="#91491b" stroke-width="1.4"/>
+<text x="409" y="322" fill="#91491b" font-size="15" font-weight="600" text-anchor="middle">a</text>
+<text x="19" y="378" fill="#4e6771" font-size="13" font-weight="450" text-anchor="start">从左往右读 · 同列对齐</text>
+</g></svg>

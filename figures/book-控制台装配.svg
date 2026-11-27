@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570" height="337" viewBox="0 0 570 337" role="img" aria-labelledby="title desc">
+<title id="title">等待重连时切任务，谁接管面板</title><desc id="desc">原定 A 在第 7 拍重连，但 A 的等待早在第 3 拍就已释放。此时仍活着的是计数器所用的 B 连接，要到第 8 拍才结束。</desc>
+<g font-family="system-ui, PingFang SC, Microsoft YaHei, sans-serif">
+<rect width="570" height="337" rx="12" fill="#f7fafb"/>
+<text x="19" y="33" fill="#203647" font-size="22" font-weight="680" text-anchor="start">等待重连时切任务，谁接管面板</text>
+<text x="19" y="72" fill="#425b68" font-size="15" font-weight="450" text-anchor="start">拍数</text>
+<text x="137.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">2</text>
+<path d="M137.0 83 L137.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="213.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">3</text>
+<path d="M213.0 83 L213.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="289.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">4</text>
+<path d="M289.0 83 L289.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="365.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">5</text>
+<path d="M365.0 83 L365.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="441.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">7</text>
+<path d="M441.0 83 L441.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="517.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">8</text>
+<path d="M517.0 83 L517.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="19" y="110" fill="#203647" font-size="16" font-weight="620" text-anchor="start">页面动作</text>
+<path d="M123 105 L550 105" stroke="#b9cad1"/>
+<path d="M545 102 L550 105" stroke="#b9cad1"/>
+<path d="M545 108 L550 105" stroke="#b9cad1"/>
+<rect x="109.9" y="90" width="54.1" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="137.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">A断线</text>
+<rect x="193.4" y="90" width="39.1" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="213.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">切B</text>
+<rect x="335.0" y="90" width="60.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="365.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">关列表</text>
+<rect x="487.0" y="90" width="60.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="517.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">关计数</text>
+<text x="19" y="163" fill="#203647" font-size="16" font-weight="620" text-anchor="start">A 的等待</text>
+<path d="M123 158 L550 158" stroke="#b9cad1"/>
+<path d="M545 155 L550 158" stroke="#b9cad1"/>
+<path d="M545 161 L550 158" stroke="#b9cad1"/>
+<rect x="137.0" y="145" width="76.0" height="26" fill="#fff0d9"/>
+<path d="M137.0 171 L213.0 171" stroke="#91491b" stroke-width="2"/>
+<path d="M137.0 145 L137.0 171" stroke="#91491b" stroke-width="2"/>
+<path d="M213.0 145 L213.0 171" stroke="#91491b" stroke-width="2"/>
+<text x="175.0" y="163" fill="#91491b" font-size="15" font-weight="600" text-anchor="middle">等待</text>
+<text x="19" y="216" fill="#203647" font-size="16" font-weight="620" text-anchor="start">B 的实时连接</text>
+<path d="M123 211 L550 211" stroke="#b9cad1"/>
+<path d="M545 208 L550 211" stroke="#b9cad1"/>
+<path d="M545 214 L550 211" stroke="#b9cad1"/>
+<rect x="289.0" y="198" width="228.0" height="26" fill="#f2eafa"/>
+<path d="M289.0 224 L517.0 224" stroke="#62438a" stroke-width="2"/>
+<path d="M289.0 198 L289.0 224" stroke="#62438a" stroke-width="2"/>
+<path d="M517.0 198 L517.0 224" stroke="#62438a" stroke-width="2"/>
+<text x="403.0" y="216" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">从游标 2 接入</text>
+<text x="19" y="269" fill="#203647" font-size="16" font-weight="620" text-anchor="start">模型交付</text>
+<path d="M123 264 L550 264" stroke="#b9cad1"/>
+<path d="M545 261 L550 264" stroke="#b9cad1"/>
+<path d="M545 267 L550 264" stroke="#b9cad1"/>
+<rect x="190.5" y="249" width="45.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="213.0" y="269" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">空表</text>
+<rect x="267.8" y="249" width="42.5" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="289.0" y="269" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">B/2</text>
+<text x="19" y="325" fill="#4e6771" font-size="13" font-weight="450" text-anchor="start">从左往右读 · 同列对齐 · 横条表示持续区间</text>
+</g></svg>

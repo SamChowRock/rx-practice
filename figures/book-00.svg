@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570" height="284" viewBox="0 0 570 284" role="img" aria-labelledby="title desc">
+<title id="title">面板关了，构建仍在继续</title><desc id="desc">打开时先读已有的两行。沿着第三行向下看，此时监听区间已经结束；若把关闭移到报错之后，这一行也能交给面板。</desc>
+<g font-family="system-ui, PingFang SC, Microsoft YaHei, sans-serif">
+<rect width="570" height="284" rx="12" fill="#f7fafb"/>
+<text x="19" y="33" fill="#203647" font-size="22" font-weight="680" text-anchor="start">面板关了，构建仍在继续</text>
+<text x="19" y="72" fill="#425b68" font-size="15" font-weight="450" text-anchor="start">先后</text>
+<text x="137.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">开始</text>
+<path d="M137.0 83 L137.0 246" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="232.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">编译</text>
+<path d="M232.0 83 L232.0 246" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="327.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">打开</text>
+<path d="M327.0 83 L327.0 246" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="422.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">关闭</text>
+<path d="M422.0 83 L422.0 246" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="517.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">报错</text>
+<path d="M517.0 83 L517.0 246" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="19" y="110" fill="#203647" font-size="16" font-weight="620" text-anchor="start">服务器日志</text>
+<path d="M123 105 L550 105" stroke="#b9cad1"/>
+<path d="M545 102 L550 105" stroke="#b9cad1"/>
+<path d="M545 108 L550 105" stroke="#b9cad1"/>
+<rect x="107.0" y="90" width="60.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="137.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">第一行</text>
+<rect x="202.0" y="90" width="60.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="232.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">第二行</text>
+<rect x="487.0" y="90" width="60.0" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="517.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">第三行</text>
+<text x="19" y="163" fill="#203647" font-size="16" font-weight="620" text-anchor="start">面板在场</text>
+<path d="M123 158 L550 158" stroke="#b9cad1"/>
+<path d="M545 155 L550 158" stroke="#b9cad1"/>
+<path d="M545 161 L550 158" stroke="#b9cad1"/>
+<rect x="327.0" y="145" width="95.0" height="26" fill="#f2eafa"/>
+<path d="M327.0 171 L422.0 171" stroke="#62438a" stroke-width="2"/>
+<path d="M327.0 145 L327.0 171" stroke="#62438a" stroke-width="2"/>
+<path d="M422.0 145 L422.0 171" stroke="#62438a" stroke-width="2"/>
+<text x="374.5" y="163" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">监听</text>
+<text x="19" y="216" fill="#203647" font-size="16" font-weight="620" text-anchor="start">面板显示</text>
+<path d="M123 211 L550 211" stroke="#b9cad1"/>
+<path d="M545 208 L550 211" stroke="#b9cad1"/>
+<path d="M545 214 L550 211" stroke="#b9cad1"/>
+<rect x="289.5" y="196" width="75.0" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="327.0" y="216" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">历史两行</text>
+<text x="19" y="272" fill="#4e6771" font-size="13" font-weight="450" text-anchor="start">从左往右读 · 同列对齐 · 横条表示持续区间</text>
+</g></svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="570" height="337" viewBox="0 0 570 337" role="img" aria-labelledby="title desc">
+<title id="title">东棚的踩踏何时变成录音</title><desc id="desc">对照第 10 题从选东到切西的一段。甲完成时音高已经是 444，但第二条开录仍取踏板按下时的 442。第三条只排过队，换棚前没有开录。</desc>
+<g font-family="system-ui, PingFang SC, Microsoft YaHei, sans-serif">
+<rect width="570" height="337" rx="12" fill="#f7fafb"/>
+<text x="19" y="33" fill="#203647" font-size="22" font-weight="680" text-anchor="start">东棚的踩踏何时变成录音</text>
+<text x="19" y="72" fill="#425b68" font-size="15" font-weight="450" text-anchor="start">操作次序</text>
+<text x="137.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">选东并踩</text>
+<path d="M137.0 83 L137.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="213.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">调高并踩</text>
+<path d="M213.0 83 L213.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="289.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">再调高</text>
+<path d="M289.0 83 L289.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="365.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">甲完成</text>
+<path d="M365.0 83 L365.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="441.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">再踩</text>
+<path d="M441.0 83 L441.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="517.0" y="72" fill="#425b68" font-size="15" font-weight="600" text-anchor="middle">切西</text>
+<path d="M517.0 83 L517.0 299" stroke="#cbd8df" stroke-dasharray="3 4"/>
+<text x="19" y="110" fill="#203647" font-size="16" font-weight="620" text-anchor="start">当前音高</text>
+<path d="M123 105 L550 105" stroke="#b9cad1"/>
+<path d="M545 102 L550 105" stroke="#b9cad1"/>
+<path d="M545 108 L550 105" stroke="#b9cad1"/>
+<rect x="115.8" y="90" width="42.5" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="137.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">440</text>
+<rect x="191.8" y="90" width="42.5" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="213.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">442</text>
+<rect x="267.8" y="90" width="42.5" height="30" rx="15" fill="#e6eefb" stroke="#254b85" stroke-width="1.4"/>
+<text x="289.0" y="110" fill="#254b85" font-size="15" font-weight="600" text-anchor="middle">444</text>
+<text x="19" y="163" fill="#203647" font-size="16" font-weight="620" text-anchor="start">踏板取样</text>
+<path d="M123 158 L550 158" stroke="#b9cad1"/>
+<path d="M545 155 L550 158" stroke="#b9cad1"/>
+<path d="M545 161 L550 158" stroke="#b9cad1"/>
+<rect x="115.8" y="143" width="42.5" height="30" rx="15" fill="#f2eafa" stroke="#62438a" stroke-width="1.4"/>
+<text x="137.0" y="163" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">440</text>
+<rect x="191.8" y="143" width="42.5" height="30" rx="15" fill="#f2eafa" stroke="#62438a" stroke-width="1.4"/>
+<text x="213.0" y="163" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">442</text>
+<rect x="419.8" y="143" width="42.5" height="30" rx="15" fill="#f2eafa" stroke="#62438a" stroke-width="1.4"/>
+<text x="441.0" y="163" fill="#62438a" font-size="15" font-weight="600" text-anchor="middle">444</text>
+<text x="19" y="216" fill="#203647" font-size="16" font-weight="620" text-anchor="start">东棚开录</text>
+<path d="M123 211 L550 211" stroke="#b9cad1"/>
+<path d="M545 208 L550 211" stroke="#b9cad1"/>
+<path d="M545 214 L550 211" stroke="#b9cad1"/>
+<rect x="115.8" y="196" width="42.5" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="137.0" y="216" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">440</text>
+<rect x="343.8" y="196" width="42.5" height="30" rx="15" fill="#d7f4e8" stroke="#086450" stroke-width="1.4"/>
+<text x="365.0" y="216" fill="#086450" font-size="15" font-weight="600" text-anchor="middle">442</text>
+<text x="19" y="269" fill="#203647" font-size="16" font-weight="620" text-anchor="start">第三条排队</text>
+<path d="M123 264 L550 264" stroke="#b9cad1"/>
+<path d="M545 261 L550 264" stroke="#b9cad1"/>
+<path d="M545 267 L550 264" stroke="#b9cad1"/>
+<rect x="441.0" y="251" width="76.0" height="26" fill="#fff0d9"/>
+<path d="M441.0 277 L517.0 277" stroke="#91491b" stroke-width="2"/>
+<path d="M441.0 251 L441.0 277" stroke="#91491b" stroke-width="2"/>
+<path d="M517.0 251 L517.0 277" stroke="#91491b" stroke-width="2"/>
+<text x="479.0" y="269" fill="#91491b" font-size="15" font-weight="600" text-anchor="middle">待录</text>
+<text x="19" y="325" fill="#4e6771" font-size="13" font-weight="450" text-anchor="start">从左往右读 · 同列对齐 · 横条表示持续区间</text>
+</g></svg>
