@@ -19,7 +19,10 @@ RxJS（Reactive Extensions for JavaScript）让你能对**陆续到来的值**�
 | 筛选随输入更新，面板共用连接，列表分批绘制 | [07 combineLatest 与 withLatestFrom](book/07.md) · [08 Subject 与 share](book/08.md) · [09 buffer 与 window](book/09.md) |
 | 续接断开的日志，用测试核对行为，替换旧实现 | [10 HTTP 与 WebSocket](book/10.md) · [11 catchError 与 retry](book/11.md) · [12 TestScheduler](book/12.md) · [13 迁移](book/13.md) |
 | 从事故记录还原故障，给导出和保存安排顺序 | [14 事故回放](book/14.md) · [15 导出中心](book/15.md) · [16 独立排错](book/16.md) · [17 控制台验收与展览预约](book/17.md) |
-| 换一个场景自己动手 | [18 十道独立练习](book/18.md) · [实战篇：接星星游戏](game/README.md) |
+| 换一个场景自己动手 | [18 十道独立练习](book/18.md) |
+| 读完分页归档，给列表和导出共用，再比较两次构建 | [19 游标与 expand](book/19.md) · [20 共享整份归档](book/20.md) · [21 forkJoin 对照报告](book/21.md) |
+| 生成一次报告、检查写入是否停滞，再从两个下载点取一份文件 | [22 轮询任务状态](book/22.md) · [23 进度与超时](book/23.md) · [24 下载点的选择](book/24.md) |
+| 用键盘和时钟做一局游戏 | [实战篇：接星星游戏](game/README.md) |
 
 每章的实验可以单跑，例如 `npm run lab -- 06`。前九章还有一个逐步装配的控制台。先跑 `npm run stage -- 5`，再跑 `npm run stage -- 6`，两次都在第 7 帧切到 B。看看哪一次真的开始读取 B 的历史。[控制台装配指南](book/控制台装配.md)
 

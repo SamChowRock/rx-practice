@@ -154,7 +154,8 @@ function section(title, entries) {
 const intro = load(md.render(await readFile(path.join(root,'README.md'),'utf8')), {}, false);
 const groups = [
   ['走进实时控制台',1], ['观察一次执行',3], ['时间与在途工作',3], ['多个参与者',3], ['真实线路与测试',4],
-  ['事故回放与独立排错',3], ['结业与独立练习',2],
+  ['事故回放与独立排错',3], ['结业与独立练习',2], ['强化篇 · 构建归档阅读器',3],
+  ['强化篇 · 从报告生成到下载',3],
 ];
 let cursor = 0;
 const outline = groups.map(([title, count]) => {
