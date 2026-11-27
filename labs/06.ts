@@ -58,20 +58,43 @@ const failure = run('详情 B 出错', f => mergeMap(f, 2), ['15 B 失败'], tru
 assert.ok(failure.includes('15 清理 A') && failure.includes('15 清理 B'));
 assert.ok(!failure.some(e => e.endsWith('订阅 C')));
 
-for (const latest of [false, true]) {
+function searchWhileTyping(aDuration: number) {
   const clock = new VirtualTimeScheduler();
   const keys = new Subject<string>();
-  const result: string[] = [];
-  const query = (key: string) => timer(key === 'A' ? 40 : 5, clock).pipe(map(() => key));
-  keys.pipe(debounceTime(5, clock), distinctUntilChanged(), latest ? switchMap(query) : mergeMap(query))
-    .subscribe(key => result.push(clock.now() + ' ' + key));
+  const query = (key: string) => timer(key === 'A' ? aDuration : 5, clock).pipe(map(() => key));
+  const confirmed = keys.pipe(debounceTime(5, clock), distinctUntilChanged());
+
+  function record(results: Observable<string>) {
+    const seen: string[] = [];
+    results.subscribe(key => seen.push(clock.now() + ' ' + key));
+    return seen;
+  }
+  const parallel = record(confirmed.pipe(mergeMap(query)));
+  const switchOnConfirmation = record(confirmed.pipe(switchMap(query)));
+  const switchOnEdit = record(keys.pipe(
+    distinctUntilChanged(),
+    switchMap(key => timer(5, clock).pipe(switchMap(() => query(key)))),
+  ));
+
   clock.schedule(() => keys.next('A'), 0);
   clock.schedule(() => keys.next('B'), 20);
   clock.schedule(() => keys.complete(), 60);
   clock.flush();
-  assert.deepEqual(result, latest ? ['30 B'] : ['30 B', '45 A']);
-  console.log(latest ? '搜索修复' : '搜索回归', result);
+  return { parallel, switchOnConfirmation, switchOnEdit };
 }
+
+const lateReply = searchWhileTyping(40);
+assert.deepEqual(lateReply.parallel, ['30 B', '45 A']);
+assert.deepEqual(lateReply.switchOnConfirmation, ['30 B']);
+assert.deepEqual(lateReply.switchOnEdit, ['30 B']);
+console.log('搜索回归', lateReply.parallel);
+console.log('搜索修复', lateReply.switchOnConfirmation);
+
+// A 在第 5 毫秒开始，17 毫秒后返回，正好落在 B 的等待期内。
+const duringPause = searchWhileTyping(17);
+assert.deepEqual(duringPause.switchOnConfirmation, ['22 A', '30 B']);
+assert.deepEqual(duringPause.switchOnEdit, ['30 B']);
+console.log('等待新词确认再切', duringPause.switchOnConfirmation, '改词立即切', duringPause.switchOnEdit);
 
 const button = new EventTarget();
 const tasks = new Subject<string>();

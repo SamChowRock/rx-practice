@@ -46,7 +46,7 @@ for (const chunk of outline.split(/^## /m).slice(1,-1)) {
   }
 }
 assert.deepEqual([...planned.keys()].sort(),published);
-const lines = ['# 教师索引：从 API 找正文和实验','','先做章节开头的无提示题，再用这页查漏。声明链接给出精确重载；主讲章节解释为什么选它，实验列是该章比较行为的工作台，不代表每个类型都有独立的运行时对象。',''];
+const lines = ['# 按 API 查正文和实验','','按导出名可以找到 7.8.2 的声明、主讲章节和同章实验。表中的题号直接跳到对应的跨章练习。类型只在编译时检查，运行时行为到实验里看。',''];
 const focus = [...outline.matchAll(/^\| `(\w+)` \| (\d+) \| (.*?) \|$/gm)];
 assert.equal(focus.length,26);
 function found(id, name) {
@@ -54,7 +54,7 @@ function found(id, name) {
   const word = new RegExp('(?<![A-Za-z0-9_$])'+name+'(?![A-Za-z0-9_$])');
   return [chapter,lab].some(content => word.test(content));
 }
-lines.push('## 26 个重点的间隔练习','','每格是不同章节的任务，同章出现多次仍只算一次。先在纸上预测，跑实验，再改变一个条件。不会的格子写下使自己改判的反例，不要只勾选读过。','','| API | 主讲 | 后续练习 |','|---|---|---|');
+lines.push('## 26 个重点的间隔练习','','「主讲」链接到首次展开讲解的章节，右栏的题号链接到后续章节里的对应练习。','','| API | 主讲 | 后续练习 |','|---|---|---|');
 const chapterLink = id => '[第 '+id+' 章](book/'+id+'.md)';
 for (const [,name,first,refs] of focus) {
   const ids = refs.split('、').map(value => value === '结业' ? '17' : value);
