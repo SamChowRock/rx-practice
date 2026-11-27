@@ -88,7 +88,7 @@ code { font: .88em/1.6 var(--mono); background: var(--inset); padding: .1em .27e
 pre { overflow: auto; padding: 1rem; color: #f1f5fc; background: #162537; border-radius: 6px; }
 pre code { padding: 0; background: transparent; }
 .table-scroll { overflow-x: auto; }
-table { border-collapse: collapse; font-size: .92rem; }
+.table-scroll > table { width: 100%; border-collapse: collapse; font-size: .92rem; }
 td,th { border: 1px solid var(--line); text-align: left; padding: .5em .7em; }
 th,details { background: var(--inset); }
 details { padding: .6em .9em; margin: 1em 0; border-radius: 5px; }
