@@ -73,6 +73,13 @@ h3 { margin-top: 1.75rem; }
 .chapter-list a { color: var(--ink); width: 100%; text-decoration: none; }
 .chapter-list a:hover { color: var(--blue); text-decoration: underline; }
 .chapter-num { flex: 0 0 4.65em; color: var(--muted); font: .8em/1.65 var(--mono); white-space: nowrap; }
+.game-guides { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; align-items: start; }
+.game-card { padding: 1.2rem 1.35rem; background: var(--surface); border: 1px solid var(--line); border-radius: 7px; }
+.game-card h3 { margin: 0 0 .7rem; font-size: 1.3rem; }
+.game-actions { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem 1.2rem; }
+.game-card ul { list-style: none; padding: .65rem 0 0; margin: 1rem 0 0; border-top: 1px solid var(--line); }
+.game-card li a { display: block; width: fit-content; padding-block: .3rem; color: var(--ink); text-decoration: none; }
+.game-card li a:hover { color: var(--blue); text-decoration: underline; }
 .reader { display: grid; grid-template-columns: minmax(0,53rem) minmax(12rem,16rem); justify-content: center; align-items: start; gap: clamp(1.25rem,3vw,3rem); }
 .reader article { grid-area: 1 / 1; min-width: 0; padding: clamp(1.5rem,3.2vw,3rem); border: 1px solid var(--line); border-radius: 7px; background: var(--surface); font-size: 1.06rem; line-height: 1.9; }
 .reader aside { grid-area: 1 / 2; min-width: 0; position: sticky; top: 4.3rem; }
@@ -109,7 +116,7 @@ blockquote { border-left: 3px solid #6697e6; padding: .1em 1em; margin-inline: 0
   .bar a { font-size: .76rem; padding-block: .2rem; }
   .bar .brand { font-size: .88rem; gap: .36rem; }
   main { padding-block: .85rem 3rem; }
-  .overview,.chapter-list { grid-template-columns: 1fr; }
+  .overview,.chapter-list,.game-guides { grid-template-columns: 1fr; }
   .overview-index { padding: .65rem 0 0; border-left: 0; border-top: 1px solid #587294; }
   .overview-index a { padding: .32em 0; }
   .reader article { padding: 1.1rem; }

@@ -72,7 +72,7 @@ async function writePage(dest, title, content) {
   const nav = `<nav aria-label="阅读导航"><div class="bar">
     <a class="brand" href="${base}/index.html">${escape(siteTitle)}</a>
     <a href="${base}/index.html#chapters">${icon('contents')}全书目录</a>
-    <a href="${base}/game/index.html">${icon('settings')}游戏实战</a>
+    <a href="${base}/index.html#game">${icon('settings')}游戏实战</a>
     <a href="https://github.com/SamChowRock/rx-practice">${githubMark}GitHub 仓库</a>
     <label class="theme-control" hidden>${icon('theme')}
       <select class="theme-select" aria-label="页面主题" title="页面主题">
@@ -94,6 +94,7 @@ const lessons = files.filter(file => /^game\/\d{2}-.+\.md$/.test(file)).sort();
 const readingOrder = [...chapters, 'game/README.md', ...lessons];
 const titles = new Map();
 const sources = new Set();
+let harborTopics;
 for (const file of files.filter(name => name.endsWith('.md'))) {
   const markdown = await readFile(path.join(root, file), 'utf8');
   const $ = load(md.render(markdown), {}, false);
@@ -102,6 +103,11 @@ for (const file of files.filter(name => name.endsWith('.md'))) {
   const title = $('h1').first().text();
   titles.set(file, title);
   const dest = htmlPath(file);
+  if (file === 'game/README.md') {
+    harborTopics = $('#雾港引航').nextUntil('h2').filter('h3').toArray().map(el => ({
+      title: $(el).text(), href: dest + '#' + $(el).attr('id'),
+    }));
+  }
   $('a[href]').each((_, el) => {
     const href = $(el).attr('href');
     if (/^(?:[a-z][\w+.-]*:|\/\/)/i.test(href)) return;
@@ -151,6 +157,15 @@ function section(title, entries) {
   }).join('');
   return '<section class="part"><h3>' + title + '</h3><div class="chapter-list">' + rows + '</div></section>';
 }
+function gameCard(name, guide, play, topics) {
+  const items = topics.map(({title, href}) =>
+    `<li><a href="${escape(href)}">${escape(title)}</a></li>`).join('');
+  return `<section class="game-card">
+    <h3>${escape(name)}</h3>
+    <div class="game-actions"><a class="start" aria-label="阅读《${name}》教程" href="${guide}">阅读教程</a>
+    <a aria-label="试玩《${name}》" href="${play}">试玩游戏 →</a></div>
+    <ul aria-label="《${name}》教程目录">${items}</ul></section>`;
+}
 const intro = load(md.render(await readFile(path.join(root,'README.md'),'utf8')), {}, false);
 const groups = [
   ['走进实时控制台',1], ['观察一次执行',3], ['时间与在途工作',3], ['多个参与者',3], ['真实线路与测试',4],
@@ -173,8 +188,12 @@ await writePage('index.html', siteTitle, `<main class="contents">
   <details class="intro"><summary>第一次跟做？查看运行方式</summary><p>使用 Node.js 24，在项目根目录运行
   <code>npm ci</code> 和 <code>npm run lab -- 01</code>。<a href="guide.html">完整阅读指南</a></p></details>
   <h2 id="chapters">课程正文</h2>${outline}
-  <h2 id="game">游戏实战</h2><p><a class="start" href="game/play.html">玩接星星 →</a> <a class="start" href="game/harbor/play.html">玩雾港引航 →</a></p>
-  ${section('实战讲义', ['game/README.md', ...lessons])}
+  <h2 id="game">游戏实战</h2>
+  <div class="game-guides">
+    ${gameCard('接星星', 'game/index.html#接星星', 'game/play.html',
+      lessons.map(file => ({ title: titles.get(file), href: htmlPath(file) })))}
+    ${gameCard('雾港引航', 'game/index.html#雾港引航', 'game/harbor/play.html', harborTopics)}
+  </div>
   <h2 id="references">索引与配套资料</h2>${section('学习参考', references)}</main>`);
 for (const game of ['game/play.html', 'game/harbor/play.html']) await save(game, await readFile(path.join(root, game)));
 for (const name of ['book.css','theme.js']) await save('assets/' + name, await readFile(path.join(here, name)));
